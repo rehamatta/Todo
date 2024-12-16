@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>todo</title>
+    
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/sweetalert2@11.15.0/dist/sweetalert2.min.css" integrity="sha256-qWVM38RAVYHA4W8TAlDdszO1hRaAq0ME7y2e9aab354=" crossorigin="anonymous">
+    <link rel="stylesheet" href="./css/all.min.css">
+    <link rel="stylesheet" href="./css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/toastr.min.css">
+    <link rel="stylesheet" href="./css/main.css">
+</head>
+<body>
+
+
+    <section class="my-container mx-auto my-4" >
+
+        <div class="status-todo bg-light bg-opacity-25 mb-3 p-3 rounded shadow border d-flex align-items-center justify-content-between">
+            <div class="flex-grow-1">
+                <h1 class="h5">Your Progress</h1>
+                <span class="small">Keep it up!</span>
+                <div id="progress-bar">
+                    <div id="progress">
+    
+                    </div>
+                </div>    
+            </div>
+            <div class="status-number">
+                <span class="completed-task"></span> / <span class="all-task"></span>
+            </div>
+        </div>
+
+        <form class="d-flex gap-3 bg-white p-4 rounded shadow">
+            <input type="text" class="entered-task form-control" placeholder="task to be done ...">
+            <button type="submit" class="add-btn">Add</button>
+        </form>
+
+        <ul class="my-todos bg-white mt-5 px-3 rounded list-unstyled shadow">
+
+        </ul>        
+    </section>
+
+    <div class="loading d-none">
+        <span class="loader"></span>
+    </div>
+    
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js" integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11.15.0/dist/sweetalert2.all.min.js" integrity="sha256-8hlaOKZp1a5BCF4U5SYERLEmherzDxVHddx1dVTKt+U=" crossorigin="anonymous"></script>
+    <script src="./js/all.min.js"></script>
+    <script src="./js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/toastr.min.js"></script>
+    <script src="./js/main.js"></script>
+
+</body>
+</html>
